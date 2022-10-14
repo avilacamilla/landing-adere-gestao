@@ -95,7 +95,7 @@ main .main__text h1 {
     color: #1b1a1b;
     text-shadow: #817f7f 1px 0 1px;
     display: block;
-    line-height: 60px;
+    line-height: 65px;
 }
 
 main .main__text strong {
@@ -109,7 +109,7 @@ main .main__text p {
     width: 90%;
 }
 
-#social {
+.social {
     text-decoration: none;
     color: #60119F;
 }
@@ -175,7 +175,7 @@ main .main__img img {
         position: fixed;
         top: 0;
         left: 0;
-        background-color: #fd64fdef;
+        background-color: #fd64fdd2;
         flex-direction: column;
         justify-content: center;
         height: 100%;
