@@ -25,7 +25,7 @@ nav {
 }
 
 nav .logo {
-    width: 200px;
+    width: 15%;
 }
 
 nav ul {
@@ -70,11 +70,11 @@ nav ul li.lg:hover {
 
 #ancor-button:hover {
     color: #FEFEFE;
-    transition: all 0.1s;
+    transition: all 0.5s;
 }
 
 nav ul li a {
-    color: #fefefe;
+    color: #1b1a1b;
     text-decoration: none;
     font-size: 17px;
 }
@@ -86,11 +86,11 @@ main {
 }
 
 main .main__text {
-    width: 50%;
+    width: 60%;
 }
 
 main .main__text h1 {
-    font-size: 4.8rem;
+    font-size: 4.1rem;
     font-family: 'Poppins', sans-serif;
     color: #1b1a1b;
     text-shadow: #817f7f 1px 0 1px;
@@ -165,6 +165,91 @@ main .main__img img {
     color: #FEFEFE;
     transition: all 0.3s;
 }
+
+/* Form */
+
+#contact-title {
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+}
+
+#form {
+   padding: 30px;
+   border: 2px;
+   box-shadow: 15px 2px 30px #5f119f56;
+   border-radius: 20px;
+   background-image: linear-gradient(134deg, #5f119fc7, 45%, #5f119f49);
+   font-family: 'Poppins', sans-serif;
+   color: #FFF; 
+}
+
+.titles {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#form-contact-name {
+    padding: 6px;
+    width: 31rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#form-contact-name:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.205));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.212));    
+}
+
+.form-contact {
+    padding: 6px;
+    width: 15.3rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.form-contact:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.205));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.212));    
+}
+
+.radio-yesNo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+#text-area {
+    padding: 6px;
+    border-radius: 20px;
+    border-color: #FEFEFE;
+    padding: 6px;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#text-area:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.205));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.212));  
+}
+
+.img-aside {
+    width: 50%;
+}
+
+
+
+
+
+
 
 @media (max-width: 850px) {
     nav .menu-icon {
