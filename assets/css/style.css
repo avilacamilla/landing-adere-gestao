@@ -61,16 +61,16 @@ nav ul li.lg {
     border-radius: 30px;
     padding: 5px 40px;
     margin-left: 30px;
+    transition: all 0.2s;
 }
 
 nav ul li.lg:hover {
     background-color: #60119F;
-    transform: all 0.5s;
+    transform: all 0.2s;
 }
 
-#ancor-button:hover {
-    color: #FEFEFE;
-    transition: all 0.5s;
+#ancor-button {
+    color: #fffafa;
 }
 
 nav ul li a {
@@ -241,6 +241,10 @@ main .main__img img {
     filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.212));  
 }
 
+#form-button {
+    margin-top: 10px;
+}
+
 .img-aside {
     width: 50%;
 }
@@ -252,6 +256,15 @@ main .main__img img {
 
 
 @media (max-width: 850px) {
+    nav {
+        width: 100%;
+    }
+    
+    nav .logo {
+        width: 30%; 
+    }
+
+    
     nav .menu-icon {
         display: block;
     }
@@ -287,6 +300,38 @@ main .main__img img {
         font-size: 24px;
     }
 
+    /* Form-Responsividade */
+
+    div #contact-title {
+        text-align: center;
+
+    }
+
+    div #form {
+        background-image: none;
+        background-color: #da95ff9e;
+        color: #1b1a1b;
+        width: 30rem;
+        text-align: left;
+        margin-left: 3rem;
+    }
+
+    div #form-contact-name {
+        width: 34.6rem;
+    }
+
+    div #input-contact-email {
+        width: 13rem;
+    }
+
+    div #input-contact-tel {
+        width: 13rem;
+    }
+
+    div #text-area {
+        width: 35rem;
+    }
+
     main{
         flex-direction: column;
         padding: 20px;
@@ -308,6 +353,51 @@ main .main__img img {
 }
 
 @media (max-width:500px) {
+    nav {
+        width: 100%;
+    }
+
+     /* Form-Responsividade */
+
+     div #contact-title {
+        text-align: center;
+
+    }
+
+    div #form {
+        background-image: none;
+        background-color: #95ff959e;
+        color: #1b1a1b;
+        width: 10rem;
+        text-align: left;
+        margin-left: 3rem;
+    }
+
+    div #form-contact-name {
+        width: 10.6rem;
+    }
+
+    div #input-contact-email {
+        display: none;
+    }
+    
+    label #email {
+        display: none;
+    }
+
+    div #input-contact-tel {
+        width: 8rem;
+    }
+
+    div #text-area {
+        width: 20rem;
+    }
+    
+    nav .logo {
+        width: 40%;
+        
+    }
+
     main .main__text h1 b{
         font-size: 3rem;
     }
@@ -322,6 +412,11 @@ main .main__img img {
 }
 
 @media (max-width:400px) {
+    nav .logo {
+        width: 45%;
+        margin-left: 26%;
+    }
+
     main .main__text h1 b{
         font-size: 3rem;
     }

@@ -48,19 +48,19 @@
 
                     <!-- Nome -->
                     <div>
-                        <label class="titles" for="name">Nome completo :</label>
+                        <label class="titles" id="form-contact-name" for="name">Nome completo :</label>
                         <input id="form-contact-name" type="text" placeholder="Digite o seu nome aqui..." name="name" required>
                     </div>
 
                     <br>
                     
                     <!-- E-mail - Telefone -->
-                    <div>
-                        <label class="titles" for="email">E-mail :</label>
-                        <input class="form-contact" type="email" placeholder="Digite o seu melhor e-mail..." name="email">
+                    <div #forms>
+                        <label id="email" class="titles" for="email">E-mail :</label>
+                        <input class="form-contact" id="input-contact-email" type="email" placeholder="Digite o seu melhor e-mail..." name="email">
 
-                        <label class="titles" for="phone">Telefone :</label>
-                        <input class="form-contact" type="tel" placeholder="12 90000-0000" name="phone">
+                        <label id="tel" class="titles" for="phone">Telefone :</label>
+                        <input class="form-contact" id="input-contact-tel" type="tel" placeholder="12 90000-0000" name="phone">
                     </div>
                     
                     <br>
@@ -78,6 +78,9 @@
                     <div>
                         <label class="titles" for="message">Mensagem:</label><br>
                         <textarea id="text-area" name="message" id="text-area" cols="80" rows="10" placeholder="Digite aqui a sua mensagem..."></textarea>
+                    </div>
+                    <div>
+                        <button id="form-button">Enviar</button>
                     </div>
 
                 </fieldset>
