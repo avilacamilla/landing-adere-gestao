@@ -58,6 +58,7 @@ nav ul li:hover::after {
 
 nav ul li.lg {
     border: 2px solid #60119F;
+    background-color: #60119F;
     border-radius: 30px;
     padding: 5px 40px;
     margin-left: 30px;
@@ -65,7 +66,7 @@ nav ul li.lg {
 }
 
 nav ul li.lg:hover {
-    background-color: #60119F;
+    background-color: transparent;
     transform: all 0.2s;
 }
 
