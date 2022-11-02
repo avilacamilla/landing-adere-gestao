@@ -25,7 +25,7 @@ nav {
 }
 
 nav .logo {
-    width: 200px;
+    width: 15%;
 }
 
 nav ul {
@@ -61,20 +61,20 @@ nav ul li.lg {
     border-radius: 30px;
     padding: 5px 40px;
     margin-left: 30px;
+    transition: all 0.2s;
 }
 
 nav ul li.lg:hover {
     background-color: #60119F;
-    transform: all 0.5s;
+    transform: all 0.2s;
 }
 
-#ancor-button:hover {
-    color: #FEFEFE;
-    transition: all 0.1s;
+#ancor-button {
+    color: #fffafa;
 }
 
 nav ul li a {
-    color: #fefefe;
+    color: #1b1a1b;
     text-decoration: none;
     font-size: 17px;
 }
@@ -86,16 +86,16 @@ main {
 }
 
 main .main__text {
-    width: 50%;
+    width: 60%;
 }
 
 main .main__text h1 {
-    font-size: 4.8rem;
+    font-size: 4.1rem;
     font-family: 'Poppins', sans-serif;
     color: #1b1a1b;
     text-shadow: #817f7f 1px 0 1px;
     display: block;
-    line-height: 60px;
+    line-height: 65px;
 }
 
 main .main__text strong {
@@ -109,7 +109,7 @@ main .main__text p {
     width: 90%;
 }
 
-#social {
+.social {
     text-decoration: none;
     color: #60119F;
 }
@@ -166,7 +166,105 @@ main .main__img img {
     transition: all 0.3s;
 }
 
+/* Form */
+
+#contact-title {
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+}
+
+#form {
+   padding: 30px;
+   border: 2px;
+   box-shadow: 15px 2px 30px #5f119f56;
+   border-radius: 20px;
+   background-image: linear-gradient(134deg, #5f119fc7, 45%, #5f119f49);
+   font-family: 'Poppins', sans-serif;
+   color: #FFF; 
+}
+
+.titles {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#form-contact-name {
+    padding: 6px;
+    width: 31rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#form-contact-name:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.205));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.212));    
+}
+
+.form-contact {
+    padding: 6px;
+    width: 15.3rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.form-contact:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.205));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.212));    
+}
+
+.radio-yesNo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+#text-area {
+    padding: 6px;
+    border-radius: 20px;
+    border-color: #FEFEFE;
+    padding: 6px;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#text-area:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.205));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.212));  
+}
+
+#form-button {
+    margin-top: 10px;
+}
+
+.img-aside {
+    width: 50%;
+}
+
+
+
+
+
+
+
 @media (max-width: 850px) {
+    nav {
+        width: 100%;
+    }
+    
+    nav .logo {
+        width: 30%; 
+    }
+
+    
     nav .menu-icon {
         display: block;
     }
@@ -175,7 +273,7 @@ main .main__img img {
         position: fixed;
         top: 0;
         left: 0;
-        background-color: #fd64fdef;
+        background-color: #fd64fdd2;
         flex-direction: column;
         justify-content: center;
         height: 100%;
@@ -202,6 +300,38 @@ main .main__img img {
         font-size: 24px;
     }
 
+    /* Form-Responsividade */
+
+    div #contact-title {
+        text-align: center;
+
+    }
+
+    div #form {
+        background-image: none;
+        background-color: #da95ff9e;
+        color: #1b1a1b;
+        width: 30rem;
+        text-align: left;
+        margin-left: 3rem;
+    }
+
+    div #form-contact-name {
+        width: 34.6rem;
+    }
+
+    div #input-contact-email {
+        width: 13rem;
+    }
+
+    div #input-contact-tel {
+        width: 13rem;
+    }
+
+    div #text-area {
+        width: 35rem;
+    }
+
     main{
         flex-direction: column;
         padding: 20px;
@@ -223,6 +353,51 @@ main .main__img img {
 }
 
 @media (max-width:500px) {
+    nav {
+        width: 100%;
+    }
+
+     /* Form-Responsividade */
+
+     div #contact-title {
+        text-align: center;
+
+    }
+
+    div #form {
+        background-image: none;
+        background-color: #95ff959e;
+        color: #1b1a1b;
+        width: 10rem;
+        text-align: left;
+        margin-left: 3rem;
+    }
+
+    div #form-contact-name {
+        width: 10.6rem;
+    }
+
+    div #input-contact-email {
+        display: none;
+    }
+    
+    label #email {
+        display: none;
+    }
+
+    div #input-contact-tel {
+        width: 8rem;
+    }
+
+    div #text-area {
+        width: 20rem;
+    }
+    
+    nav .logo {
+        width: 40%;
+        
+    }
+
     main .main__text h1 b{
         font-size: 3rem;
     }
@@ -237,6 +412,11 @@ main .main__img img {
 }
 
 @media (max-width:400px) {
+    nav .logo {
+        width: 45%;
+        margin-left: 26%;
+    }
+
     main .main__text h1 b{
         font-size: 3rem;
     }
